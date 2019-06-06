@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DialogTest.Views.ItemsPage"
+             Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Button Margin="20"  Text="Display actions" BackgroundColor="#0D8AEE" TextColor="White" HeightRequest="50" Clicked="Button_Clicked" />
+
+        <StackLayout Margin="20" Orientation="Horizontal">
+            <Label TextColor="Black" FontSize="20" Text="Ação:" />
+            <Label TextColor="Black" FontSize="20" FontAttributes="Bold" x:Name="acao" Text="" />
+        </StackLayout>
+
+        <StackLayout Margin="20" Orientation="Horizontal">
+            <Label TextColor="Black" FontSize="20" Text="Tipo de Documento:" />
+            <Label TextColor="Black" FontSize="20" FontAttributes="Bold" x:Name="tipoDocumento" Text="" />
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>
